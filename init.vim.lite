@@ -1,0 +1,44 @@
+" Set the number of spaces for tabs:
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" Enable syntax highlighting:
+syntax enable
+
+" Set the color scheme: gruvbox, molokai, and solarized 
+"colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
+" Enable line numbers:
+set number
+
+" Enable mouse support:
+set mouse=a
+
+" Enable clipboard support:
+set clipboard=unnamedplus
+
+" Install Plugin Vim-Plug 
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+" Colorchems
+" Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'morhetz/gruvbox'
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+
+" Set the color scheme: gruvbox, molokai, and solarized 
+colorscheme gruvbox "catppuccin  catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
+
+
